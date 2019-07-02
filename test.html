@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <style>
+    body {
+        background-color: azure
+    }
+    .img1 {
+        max-width: 70%;
+    }
+    </style>
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Word Guessing Game</title>
+  </head>
+  <body>
+        <h1>hello World!</h1>
+    <!-- Optional JavaScript -->
+    <script>
+     //Array for the names that are going to be guessed
+    //var names = ["Charles Leclerc", "Max Verstapen", "Pierre Gasly", "Sebatian Vettel"]
+    var names = ["Charles Leclerc", "Michael"]
+    
+    //section that will record the player strokes on the keyboard
+    document.onkeyup = function(){
+        var strokeGuess = String.fromCharCode(event.keyCode).toLocaleLowerCase();
+        console.log(strokeGuess);
+
+        /* this syntax makes the computer choose a ramdom name from the array name
+        var randomName = names[Math.floor(Math.random()*names.length)];
+        console.log(randomName);
+        */
+        //iteration to look through the correct letters of the name with a for loop test if a letter of the name is pressed return true
+        
+        for (var i=0; i < names[0].length; i++){
+        //make the function to look through the position
+          if
+        }
+    
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
